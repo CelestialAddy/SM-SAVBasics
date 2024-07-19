@@ -9,7 +9,7 @@
 ![All combos unlocked.](DemoImages/3_Combos.png)
 ![Style points UI display enabled, not normally possible.](DemoImages/4_Style.png)
 ![Accessing this level on Windows is not normally possible, and will crash.](DemoImages/5_Slot.png)
-![The normally inaccessible difficulty level 0 often effectively removes timers.](DemoImages/5_Difficulty.png)
+![The normally inaccessible difficulty level 0 often effectively removes timers.](DemoImages/6_Difficulty.png)
 
 ## Example JSON
 ```
