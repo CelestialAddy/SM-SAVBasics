@@ -350,7 +350,9 @@ Some of the SAV file data isn't fully understood by me yet (or is odd to handle 
 - Text strings in ASCII (currently exported as an array of integers that make up the encoded ASCII string).
 - Secret Store/movement flag carriers (each is represented numerically, exact functionality is not currently understood).
 - Volume levels and TRAINING level best times (currently all represented as numbers, the exact transformation from numeric value to in-game use is not currently understood).
+
 Additionally, JSON exports retain some of the potentially interesting data type/range usage from the original SAV file structure:
+
 - Some settings are effectively boolean values to the game but are stored and handled as numeric values anyway.
 - The footer's "last slot saved" value is zero-based.
 - The footer's "weekday upon last save" value (1-7) indexes from Sunday to Saturday (so Wednesday would be 4, for example).  
