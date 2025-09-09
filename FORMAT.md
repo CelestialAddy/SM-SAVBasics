@@ -23,7 +23,7 @@ A good amount of the available space appears to be used for nothing or as paddin
 ### Overview
 The save data is split into ten differently-sized chunks that follow one another. All values are little-endian (on Windows at least); integer signage can be ambiguous, and is not defined here (for the sake of functionality most integer values are considered signed on import/export by SAVBasics).
 - Chunk 0 is a header that stores the version signature.
-- Chunks 1-8 hold the slot data for slots 1-8 respectively (the struture of each is identical).
+- Chunks 1-8 hold the slot data for slots 1-8 respectively (the structure of each is identical).
 - Chunk 9 is a footer that stores information about the last save made to the file by the game.
 
 This section will go on to provide variables/values with offsets for each chunk type, however the offsets given will be *relative*. To get the absolute offset, the offset of the chunk itself (relative to the size of the file as a whole) must be added - see the table below for chunk offsets and lengths.
@@ -270,7 +270,7 @@ Additionally, for each variable/value, a Type and JSON Variable will be listed.
 | 18/12 | N/A | N/A | Two bytes long. |
 | 20/14 | N16 | General.LastSaveYear | Year upon last save (2024 = 2024). |
 | 22/16 | N16 | General.LastSaveMonth | Month upon last save (1 = January, 12 = December). |
-| 24/18 | N16 | General.LastSaveWeekday | Weekday upon last save (0 = Sunday, 7 = Saturday). |
+| 24/18 | N16 | General.LastSaveWeekday | Weekday upon last save (1 = Sunday, 7 = Saturday). |
 | 26/1A | N16 | General.LastSaveDay | Day upon last save (1-31 range typically). |
 | 28/1C | N16 | General.LastSaveHour | Hour upon last save (0 = 00:##:##). |
 | 30/1E | N16 | General.LastSaveMinute | Minute upon last save (0 = ##:00:##). |
@@ -284,6 +284,7 @@ Additionally, for each variable/value, a Type and JSON Variable will be listed.
 | Signature (ASCII) | Version |
 | ----------------- | ------- |
 | 13:56:03 | WINDOWS/1.0 |
+| 09:22:10 | WINDOWS/1.1 |
 | 09:18:13 | WINDOWS/1.3 |
 
 ### Difficulty IDs
